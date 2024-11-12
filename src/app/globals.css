@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.monoton-regular {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollContainer {
+  margin-top: 50px;
+}
+
+/* aura */
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffe4;
+  z-index: 1;
+  max-width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+#up,
+#down,
+#left,
+#right {
+  position: absolute;
+  border-radius: 45%;
+  background: radial-gradient(rgba(255, 299, 0, 0.7), #ffffff);
+  filter: blur(90px);
+  z-index: -1;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#up {
+  height: 800px;
+  width: 800px;
+  top: 0;
+  left: 0;
+  animation-name: fadeInOut, randomMoveUpLeft;
+}
+
+#down {
+  height: 600px;
+  width: 600px;
+  bottom: 0;
+  right: 0;
+  animation-name: fadeInOut, randomMoveDownRight;
+}
+
+#left {
+  height: 600px;
+  width: 600px;
+  top: 890;
+  left: 600;
+  animation-name: fadeInOut, randomMoveUpLeft;
+}
+
+#right {
+  height: 600px;
+  width: 600px;
+  bottom: 80;
+  right: 30;
+  animation-name: fadeInOut, randomMoveDownRight;
+}
+
+@keyframes randomMoveUpLeft {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(calc(20vw - 400px), calc(-20vh + 600px)) scale(1.1);
+  }
+  50% {
+    transform: translate(calc(-20vw + 400px), calc(20vh - 300px)) scale(0.9);
+  }
+  75% {
+    transform: translate(calc(20vw - 400px), calc(-20vh + 200px)) scale(1.1);
+  }
+}
+
+@keyframes randomMoveDownRight {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(calc(-20vw + 400px), calc(20vh - 400px)) scale(1.1);
+  }
+  50% {
+    transform: translate(calc(20vw - 400px), calc(-20vh + 400px)) scale(0.9);
+  }
+  75% {
+    transform: translate(calc(-20vw + 400px), calc(20vh - 400px)) scale(1.1);
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.play-button {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,36 @@
+/* Media queries */
+@media (min-width: 700px) and (max-width: 900px)  {
+  .circularImageContainer {
+   width: 107px;
+    height: 107px;
+    bottom: 1px;
+    left: 40px;
+    right: auto;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 1024px) {
+  .circularImageContainer {
+    width: 107px;
+    height: 107px;
+    bottom: 1px;
+    left: 40px;
+    right: auto;
+  }
+  .content {
+    font-size: 36px !important;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .circularImageContainer {
+    width: 107px;
+    height: 107px;
+    bottom: 2px;
+    left: 80px;
+    right: auto;
+  }
+  .content {
+    font-size: 38px;
+  }
+}

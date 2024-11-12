@@ -1,0 +1,6 @@
+
+
+.slick-prev, .slick-next {
+  z-index: 1; /* Ensure arrows are on top of the slider */
+  color: black; /* Set arrow color */
+}

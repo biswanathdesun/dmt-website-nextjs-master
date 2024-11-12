@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Fira Code",
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+}
